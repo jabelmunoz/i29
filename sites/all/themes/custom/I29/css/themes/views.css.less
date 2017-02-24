@@ -1,0 +1,460 @@
+/**
+ * @file
+ * View Styles
+ * region-description-view
+ * EX: .sidebar-news-view
+ */
+
+.view-list-view-page {
+  .views-row {
+    clear: both;
+    .field-name-field-image {
+      float: left;
+      margin-right: 30px;
+    }
+    .views-field-title {
+      color: #3c4b55;
+      font-weight: bold;
+      margin-left: 130px;
+      h2 {
+        font-size: 1.333em;
+        margin: 0;
+      }
+    }
+    .field-name-field-date-display {
+      color: #888;
+      font-size: 0.800em;
+      margin-left: 130px;
+    }
+    .tags-field {
+      margin-left: 130px;
+      .field-name-field-tags {
+        display: inline-block;
+        a {
+          border-right: 1px solid #0088cc;
+          padding-right: 4px;
+        }
+      }
+    }
+
+    .field-name-body {
+      margin-left: 130px;
+    }
+    .views-field-view-node {
+      float: right;
+      margin-left: 130px;
+    }
+  }
+}
+
+ .view {
+   .views-row {
+     margin-bottom: 20px;
+
+     .field-name-title-field {
+       font-size: 20px;
+       font-weight: bold;
+       a {
+         color: @color-font;
+       }
+     }
+   }
+
+   .view-filters {
+     form label {
+       text-align: left;
+     }
+   }
+ }
+
+ .list-view {
+   .field-name-field-image {
+     float: left;
+     margin-right: 15px;
+   }
+ }
+
+ .grid-view {
+   .views-row {
+     display: inline-block;
+     vertical-align: top;
+     width: 31%;
+     .field-name-field-date,
+     .field-name-field-image {
+       margin-bottom: 10px;
+     }
+     .field-name-field-date {
+       span {
+         .font-size(14px);
+         color: #999999;
+         font-style: italic;
+       }
+     }
+     .field-name-field-image {
+       img {
+         display: block;
+         height: auto;
+         max-width: 100%;
+         width: 100%;
+       }
+     }
+
+     &:nth-child(3n+2){
+       margin-left: 2%;
+       margin-right: 2%;
+     }
+   }
+ }
+
+.flexslider {
+  .views-field-field-slide {
+    position: relative;
+
+    &:after {
+      background-color: rgba(0,0,0,0.5);
+      content: "";
+      display: block;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+    }
+  }
+
+  .views-field-nothing {
+    bottom: 50%;
+    margin-bottom: -110px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    z-index: 2;
+
+    @media (max-width: 767px) {
+      margin-bottom: -45px;
+    }
+  }
+
+  .slide-title {
+    color: #fff;
+    font-family: @family-header-medium;
+    font-size: 2.4rem;
+    line-height: 1.2em;
+
+    @media (max-width: 767px) {
+      font-size: 1.4rem;
+    }
+
+    span {
+      display: block;
+      font-size: 7.7rem;
+      line-height: 1.2em;
+
+      @media (max-width: 767px) {
+        font-size: 2.7rem;
+      }
+
+      &.bottom-line {
+        font-family: @family-header-bold;
+        font-size: 5.332rem;
+        line-height: 1.2em;
+
+        @media (max-width: 767px) {
+          font-size: 1.7rem;
+        }
+      }
+    }
+  }
+
+  .slide-link a {
+    .button;
+    background-color: #fff;
+    color: #333;
+
+    @media (max-width: 767px) {
+      margin-top: 0;
+      padding: 9px 15px;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      color: #fff;
+      opacity: 1;
+    }
+  }
+}
+
+// flex slider reset
+.flexslider {
+  border: none;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+
+  .flex-direction-nav {
+    a {
+      color: transparent;
+      font-size: 0;
+      height: auto;
+      text-shadow: none;
+      width: auto;
+
+      &:before {
+        border: 2px solid #fff;
+        color: #fff;
+        content: "\f060";
+        font-family: @font-awesome;
+        font-size: 2.5rem;
+        font-weight: normal;
+        padding: 1.4rem 1.1rem;
+        text-shadow: none;
+      }
+    }
+    .flex-next,
+    .flex-prev {
+      color: #ddd;
+      &.flex-disabled {
+        opacity: 1;
+      }
+    }
+    a.flex-next:before {
+      content: "\f061";
+    }
+  }
+  .slides {
+
+    .views-field {
+      //background: @color-slider-view-bkg;
+      //color: @color-slider-view-text;
+    }
+  }
+}
+
+.flex-control-nav {
+  bottom: 40px;
+  z-index: 2;
+
+  @media (max-width: 767px) {
+    bottom: 15px;
+  }
+}
+
+.flex-control-paging li a {
+  background-color: transparent;
+  border-bottom: 2px solid #fff;
+  border-radius: 0;
+  box-shadow: none;
+  color: #fff;
+  font-family: @family-header-font;
+  font-size: 1.4rem;
+  height: auto;
+  opacity: 0.5;
+  padding:  5px 16px;
+  text-indent: 0;
+  width: auto;
+
+  &.flex-active,
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    opacity: 1;
+  }
+}
+
+.slick__arrow {
+  .slick-arrow {
+    border: 0px none;
+    color: transparent;
+    font-size: 0;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    width: auto;
+
+    &:before {
+      border: 2px solid #fff;
+      color: #fff;
+      content: "\f060";
+      font-family: @font-awesome;
+      font-size: 2.5rem;
+      font-weight: normal;
+      line-height: 2.1em;
+      padding: 1.1rem 1.1rem;
+      text-shadow: none;
+    }
+
+    &.slick-prev {
+      left: -65px;
+    }
+
+    &.slick-next {
+      right: 0;
+
+      &:before {
+        content: "\f061";
+      }
+    }
+  }
+}
+
+.view-sermons {
+  .image-wrapper  {
+    margin-bottom: 2.5rem;
+    position: relative;
+
+    &:hover,
+    &:focus {
+      &:after {
+        background-color: rgba(0,0,0,0.6);
+        content: "";
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 2;
+        transform: translateZ(0);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -moz-osx-font-smoothing: grayscale;
+        overflow: hidden;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: color, background-color;
+        transition-property: color, background-color;
+      }
+      a {
+        opacity: 1;
+      }
+    }
+
+    img {
+      height: auto;
+      max-width: 100%;
+      position: relative;
+      z-index: 1;
+    }
+
+    a {
+      .button;
+      bottom: 0;
+      height: 42px;
+      left: 0;
+      line-height: 42px;
+      margin: auto;
+      opacity: 0;
+      padding: 0;
+      position: absolute;
+      right: 0;
+      text-align: center;
+      top: 0;
+      width: 148px;
+      z-index: 3;
+      transform: translateZ(0);
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      overflow: hidden;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: opacity;
+      transition-property: opacity;
+    }
+  }
+
+  .views-field-field-date-video {
+    color: #fb5c5c;
+    font-family: @family-header-font;
+    font-size: 1.4rem;
+    line-height: 1.2em;
+    margin-bottom: 0.8rem;
+    text-transform: uppercase;
+  }
+
+  .views-field-title a {
+    color: #000000;
+    font-family: @family-header-font;
+    font-size: 2.1rem;
+    line-height: 1.2em;
+    margin-bottom: 0.7rem;
+    text-transform: uppercase;
+
+    &:hover,
+    &:focus {
+      color: #b7b7b7;
+    }
+  }
+}
+
+.featured-sermon {
+  box-sizing: border-box;
+  height: 371px;
+  padding-top: 6.7rem;
+  text-align: center;
+
+  h3 {
+    color: #fb5c5c;
+    font-family: @family-header-medium;
+    font-size: 2rem;
+    letter-spacing: 3.7px;
+    margin-bottom: 1.7rem;
+  }
+
+  .view-content {
+    margin: 0 auto;
+    max-width: 525px;
+  }
+
+  .views-field-title {
+    color: #fff;
+    font-family: @family-header-font;
+    font-size: 4.9rem;
+    line-height: 1em;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+
+    @media (max-width: 767px) {
+      font-size: 3rem;
+    }
+  }
+
+  .views-field-colorbox-1 a {
+    .button;
+  }
+}
+
+.grid-list {
+  .view-content {
+    font-size: 0;
+    line-height: 0;
+  }
+
+  .views-row {
+    display: inline-block;
+    margin-bottom: 5rem;
+    vertical-align: top;
+    width: 31.558%;
+
+    @media (max-width: 767px) {
+      margin-left: auto;
+      margin-right: auto;
+      width: auto;
+    }
+
+    &:nth-child(3n+2){
+      margin-left: 2.65%;
+      margin-right: 2.65%;
+
+      @media (max-width: 767px) {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+}
+
